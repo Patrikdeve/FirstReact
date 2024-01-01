@@ -8,9 +8,16 @@ import React, { Component } from 'react'
          message: 'Hello'
       }
       
-      this.clickHandler = this.clickHandler.bind(this)
+      //For approach 4 where we used the arrow function to define the click handler function need not to defint the command using bind keyword
+    //   this.clickHandler = this.clickHandler.bind(this)
     }
-    
+  
+//using function method 
+// clickHandler() {
+//     this.setState ({
+//         message : 'GoodBye !!!'
+//     })
+// }
  clickHandler = () => {
     this.setState({
         message: 'GoodBye !!'
