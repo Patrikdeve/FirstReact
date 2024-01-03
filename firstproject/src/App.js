@@ -1,28 +1,143 @@
-
-import logo from './logo.svg';
+//Now Starting with the context Here only 
 import './App.css';
-import React, { Component } from 'react'
-import FragmentDemo from './Components/FragmentDemo';
-import Table from './Components/Table';
-import PureCompo from './Components/PureComponent';
+import React, { Component } from 'react';
+import ComponentC from './ContextComponents/ComponentC';
+import { UserProvider } from './ContextComponents/userContext';
+ 
 
 
 
 
- class App extends Component {
+
+
+
+
+
+
+class App extends Component {
   render() {
     return (
-      <div className='App'>
-          {/* <FragmentDemo/> */}
-          {/* <Table /> */}
-
-          <PureCompo/>
+      <div className = 'App'>
+        
+         <UserProvider value = "Omkar">
+             <ComponentC />
+         </UserProvider>
       </div>
     )
   }
 }
 
 export default App
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import logo from './logo.svg';
+// import './App.css';
+// import React, { Component } from 'react'
+// import FragmentDemo from './Components/FragmentDemo';
+// import Table from './Components/Table';
+// import PureCompo from './Components/PureComponent';
+// import ParentComp from './Components/ParentComp';
+// import Refs from './Components/Refs';
+// import FocusInput from './Components/FocusInput';
+// import FRParentInput from './Components/FRParentInput';
+// import PortalDemo from './Components/PortalDemo';
+// import Hero from './Components/Hero';
+// import ErroBoundary from './Components/ErroBoundary';
+// import ClickCounter from './Components/ClickCounter';
+// import HoverCounter from './Components/HoverCounter';
+// import RenderWithCounter from './Components/RenderWithCounter';
+// import ClickCounterTwo from './Components/ClickCounterTwo';
+// import HoverCounterTwo from './Components/HoverCounterTwo';
+
+
+
+//  class App extends Component {
+//   render() {
+//     return (
+//       <div className='App'>
+//           {/* <FragmentDemo/> */}
+//           {/* <Table /> */}
+
+//           {/* <ParentComp/> */}
+      
+//           {/* <Refs></Refs> */}
+
+//           {/* <FocusInput/> */}
+
+//           {/* <FRParentInput></FRParentInput> */}
+
+//         {/* <PortalDemo/> */}
+      
+//       {/* wrapping up to all childrens to single error hypes the one who also don't have any error so we wrap it to individual child
+//         <ErroBoundary>
+//         <Hero heroName = "Batman"/>
+//         <Hero heroName = "Superman"/>
+//         <Hero heroName = "Joker"/>
+//         </ErroBoundary> */}
+        
+//         {/* <ErroBoundary>
+//           <Hero heroName = "Batman"/>
+//         </ErroBoundary>
+//         <ErroBoundary>
+//          <Hero heroName = "Superman"/>
+//         </ErroBoundary>
+//         <ErroBoundary>
+//           <Hero heroName = "Joker"/>
+//         </ErroBoundary> */}
+        
+//         {/* ************  Higher Order Component *********
+//         <ClickCounter></ClickCounter>
+//         --------In below case by just passing props this doesn't adds to the original component rather it adds to the wrapped component for this purpose we use the spread operator in 
+//         update component function 
+//         <HoverCounter name= 'Omkar'></HoverCounter>  */}
+      
+
+//       {/* **************** Now Going throug same scenario but using render prop method  */}
+
+//       <RenderWithCounter render = { (count, incrementCount) => 
+//       <ClickCounterTwo count = {count} incrementCount = {incrementCount} />}
+//       />
+
+//       <RenderWithCounter render = {(count, incremenetCount) => 
+//       <HoverCounterTwo count = {count} incrementCount = {incremenetCount} />}
+//       />
+      
+      
+      
+//       </div>
+//     )
+//   }
+// }
+
+// export default App
+
 
 
 
