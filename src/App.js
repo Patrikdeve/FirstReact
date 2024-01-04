@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import PostList from './Components/PostList'
+import PostForm from './Components/PostForm'
+import ClassCounter from './Components/ClassCounter'
+import HookCounter from './Components/HookCounter'
+import HookCounterTwo from './Components/HookCounterTwo'
+import HookCounterThree from './Components/HookCounterThree'
+import HookCounterFour from './Components/HookCounterFour'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+export class App extends Component {
+  render() {
+    return (
+      <div className='App'>
+
+        {/* here done with the http
+        {/* <PostList/> 
+        <PostForm></PostForm> */}
+
+        {/* <ClassCounter/> 
+        <HookCounter/> */}
+
+        {/* <HookCounterTwo/> */}
+
+        <HookCounterThree/>
+
+        <HookCounterFour/>
+      </div>
+    )
+  }
 }
 
-export default App;
+export default App
