@@ -12,7 +12,8 @@ import { UserProvider } from './ContextComponents/userContext';
 
 
 
-
+//The context topic will become very easy using the useContext hook 
+//Syntax is very simple just go through the code evolution topic 60 to get to know this easy hook
 
 class App extends Component {
   render() {
