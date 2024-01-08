@@ -20,9 +20,11 @@ class App extends Component {
     return (
       <div className = 'App'>
         
-         <UserProvider value = "Omkar">
+         {/* <UserProvider value = "Omkar">
              <ComponentC />
-         </UserProvider>
+         </UserProvider> */}
+
+         
       </div>
     )
   }
