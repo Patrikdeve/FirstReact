@@ -15,6 +15,9 @@ import MouseContainer from './UseEffectComponents.js/MouseContainer'
 import IntervalClassCounter from './UseEffectComponents.js/IntervalClassCounter'
 import IntervalHookCounter from './UseEffectComponents.js/IntervalHookCounter'
 import DataFetching from './FetchingDatawithEffects/DataFetching'
+import ReducerCounter from './Reducer/ReducerCounter'
+import ReducerCounterTwo from './Reducer/ReducerCounterTwo'
+import ReducerCounterThree from './Reducer/ReducerCounterThree'
 
 export class App extends Component {
   render() {
@@ -48,7 +51,12 @@ export class App extends Component {
         {/* <IntervalHookCounter/> */}
       
 
-        <DataFetching/>
+        {/* <DataFetching/> */}
+
+          {/* <ReducerCounter/> */}
+          {/* <ReducerCounterTwo/> */}
+          <ReducerCounterThree/>
+
       </div>
     )
   }
